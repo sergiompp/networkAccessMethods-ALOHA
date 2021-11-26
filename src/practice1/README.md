@@ -21,6 +21,49 @@ For both scenarios,
 ## Question 2.
 Now, for the two scenarios, calculate the average number of packets successfully transmitted in one second. 
 - What is the average number of retransmissions per second?
-> The average number of packets successfully transmitted per second is equal to: 
-> S/T = G/T*e^{-G}
+
+> ###### ***SITUATION - SCENARIO 1***
+> First, we know that the average number of packets successfully transmitted per second is equal to: 
+> S/T = G/T*e<sup>-G</sup>
+
+> Besides, we know too that if 12 packets are sent per second over a line using a slotted ALOHA protocol then the number of packets sent at time T is equal
+a G = 12 * T = 6 packages. 
+
+> So the the average number of packets transmitted in one second successfully equals to S/T = 0.03.
+
+> Being the average number of retransmissions per second: R/T = (e<sup>-G</sup>-1)/T = 804.9.
+
+> ###### ***SITUATION - SCENARIO 2***
+
+> How here 6 packets per second per line are sent over two lines using an ALOHA (pure) protocol, for each line, the number of packets sent at time T is equal to 6 * T = 3 packets.
+
+> Being the average number of packets transmitted in one second successfully equal to 2*(S/T) = 2G/T*e<sup>-2G</sup> = 0.03. Also, the average number of retransmissions per second: 2*(R/T) = (e<sup>-2G</sup>-1)/T = 1610.
+
 - Which of the two scenarios is better in terms of performance?
+
+> In this case, both scenearios have the same performance. Why? Because we have 2 opposing situations.
+
+> For the first scenario, the number of packets to be transmitted is double but when using a protocol such as slotted ALOHA, the probability of collision is lower. After that, in scenario 2, half the packets are transmitted per line but using ALOHA (pure) where the probability of collision is higher. Consequently, both effects cancel each other out. 
+
+## Question 3.
+If the propagation delay and transmission time of an ACK / NACK are zero and the average waiting time before forwarding a packet is 5 times the transmission time of a packet, for both scenarios, calculate the average time between first transmission of the packet and its reception successfully.
+
+> ###### ***SITUATION - SCENARIO 1***
+
+> We konw that the delay is equal to D = (e<sup>-G</sup>-1)(T<sub>ACK</sub> + T<sub>BO</sub>) + (3/2)T. Where:
+> - G = 6 packets.
+> - T = 0.5 sec.
+> - T<sub>ACK</sub> = 0 sec.
+> - T<sub>BO</sub> = 5T = 2.5 sec.
+
+> So, delay is D = 20.14 min. 
+
+> ###### ***SITUATION - SCENARIO 2***
+
+> In this case, the delay is equal to D = (e<sup>-2G</sup>-1)(T<sub>ACK</sub> + T<sub>BO</sub>) + T. Where:
+> - G = 6 packets.
+> - T = 0.5 sec.
+> - T<sub>ACK</sub> = 0 sec.
+> - T<sub>BO</sub> = 5T = 2.5 sec.
+
+> So, delay is D = 20.12 min. 
