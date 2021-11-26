@@ -1,6 +1,6 @@
 # SCENARIO 2 - Telephone Networks
 
-The final and direct sections are shown in the telephone network in Figure 1 ([Structure of the telephone network](https://github.com/sergiompp/networkAccessMethods-ALOHA/blob/8673c02e6a8b934fce764d7abd53767946de9679/practice2/Figura%201%20-%20Structure%20of%20the%20telephone%20network.png)).
+The final and direct sections are shown in the telephone network in [Figure 1 - Structure of the telephone network](https://github.com/sergiompp/networkAccessMethods-ALOHA/blob/8673c02e6a8b934fce764d7abd53767946de9679/practice2/Figura%201%20-%20Structure%20of%20the%20telephone%20network.png).
 
 All sections are made up of several lines. If one of these lines is free, the call can be made on this section.
 
