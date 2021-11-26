@@ -1,6 +1,6 @@
 # SCENARIO 2 - Telephone Networks
 
-The final and direct sections are shown in the telephone network in Figure 1 (Structure of the telephone network).
+The final and direct sections are shown in the telephone network in Figure 1 ([Structure of the telephone network](practice2/Figura 1 - Structure of the telephone network.png)).
 
 All sections are made up of several lines. If one of these lines is free, the call can be made on this section.
 
