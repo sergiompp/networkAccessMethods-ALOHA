@@ -50,6 +50,20 @@ A packet switched network sends 1 KB packets and the link between two nodes has 
 The packets arrive at the nodes according to a Poisson distribution and the service time follows an exponential distribution.
 
 * What is the average number of packets served per second?
+
+> Packet size is 1 KB = 8000 bits and the channel capacity is 4 Mbps. So, each node can send 4 Mbps / 1 KB = 500 packets per second.  
+
 * What is the average number of packets per second that a node can accept so that the average wait time in the buffer is equal to 5 ms?
+
+> Because packet arrivals follow a Poisson distribution, service time follows an exponential distribution and there is only one link, this system can be modeled as M / M / 1. Therefore, the average waiting time in the buffer is given by:
+
+> W<sub>q</sub> = {ro* E[S]} / {1 - p}, where:
+
+> - W<sub>q</sub> = 5 msec.
+> - E[S] = 1/500 2 msec.
+> - ro = alpha * E[S] (where alpha is the average number of packets reaching the system or it is the number of packets per second that a node accepts)
+
+> Alpha = {W<sub>q</sub>} / {(E<sup>2</sup>[S]) + (W<sub>q</sub> * E[S])} = 357.14 packets per second.
+
 * How much memory on average will the node be occupying?
 * Now the buffer on the node has a memory of 5 KB. The node uses the packet drop algorithm to mitigate congestion on the network. What is the probability that the node will have to drop packets?
