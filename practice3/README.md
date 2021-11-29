@@ -66,4 +66,11 @@ The packets arrive at the nodes according to a Poisson distribution and the serv
 > Alpha = {W<sub>q</sub>} / {(E<sup>2</sup>[S]) + (W<sub>q</sub> * E[S])} = 357.14 packets per second.
 
 * How much memory on average will the node be occupying?
+
+> The average number of packets (clients) in the queue is:
+
+> L<sub>q</sub> = {ro<sup>2</sup>} / {1 - ro} = 1.79 packets.
+
+> If each packet is 1 KB in size, on average it is occupying 1.79 KBytes.
+
 * Now the buffer on the node has a memory of 5 KB. The node uses the packet drop algorithm to mitigate congestion on the network. What is the probability that the node will have to drop packets?
