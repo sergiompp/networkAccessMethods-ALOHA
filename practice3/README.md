@@ -74,3 +74,5 @@ The packets arrive at the nodes according to a Poisson distribution and the serv
 > If each packet is 1 KB in size, on average it is occupying 1.79 KBytes.
 
 * Now the buffer on the node has a memory of 5 KB. The node uses the packet drop algorithm to mitigate congestion on the network. What is the probability that the node will have to drop packets?
+
+> We know that the maximum number of packet can be in the system are 6 (5 packets in the queue and 1 more on the channel) due to buffer's memory is 5 KB and packet's size is 1 KB. So, the system can be modelate like M / M / 1 / 6. 
